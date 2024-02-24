@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: sqlcpp5
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+      POSTGRES_DB: sqlcpp5
+    volumes:
+      - "./db-data:/data/postgres"
+    ports:
+      - "5432:5432"
+    restart: unless-stopped

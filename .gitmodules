@@ -1,0 +1,3 @@
+[submodule "task_5/lib/libpqxx"]
+	path = task_5/lib/libpqxx
+	url = https://github.com/jtv/libpqxx.git
